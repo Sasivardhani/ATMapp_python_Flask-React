@@ -97,18 +97,6 @@ cd frontend
 npm install axios
 ```
 
-Now copy the 3 files from `frontend_src/` into your new `frontend/src/` folder,
-**overwriting** the default `App.js` and `App.css`:
-
-```bash
-# from the atm-app root folder
-cp frontend_src/App.js frontend/src/App.js
-cp frontend_src/App.css frontend/src/App.css
-cp frontend_src/api.js frontend/src/api.js
-```
-
-(On Windows, just drag-and-drop / copy-paste the 3 files in File Explorer or VS Code's sidebar.)
-
 Then start the React app:
 
 ```bash
