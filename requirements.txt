@@ -1,0 +1,18 @@
+import axios from "axios";
+
+const API_BASE = "http://localhost:5000/api";
+
+export const login = (username, pin) =>
+  axios.post(`${API_BASE}/login`, { username, pin });
+
+export const getBalance = (username) =>
+  axios.get(`${API_BASE}/balance/${username}`);
+
+export const deposit = (username, amount) =>
+  axios.post(`${API_BASE}/deposit`, { username, amount });
+
+export const withdraw = (username, amount) =>
+  axios.post(`${API_BASE}/withdraw`, { username, amount });
+
+export const getTransactions = (username) =>
+  axios.get(`${API_BASE}/transactions/${username}`);
